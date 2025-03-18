@@ -12,7 +12,7 @@ h1, h2, h3{
 
 p{
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 200;
 }
 header{
   background-color: #61787f;
@@ -55,9 +55,59 @@ header h1{
   border-radius: 25px;
   position: absolute;
   right: 50px;
+  border: none;
   
 }
 
+.films-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-film{
+  position: relative;
+  width: 30%;
+  
+}
+
+.card-film img{
+  width: 100%;
+}
+
+.card-film div{
+  position: absolute;
+  top: 34px;
+  box-sizing: border-box; 
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-film div h3{
+  color: white;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.card-film div button {
+  background-color: black;
+  color: white;
+  width: 81px;
+  height: 25px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 60%;
+  margin-bottom: 13px;
+  font-family: 'Oswald';
+
+}
+
+@media (max-width: 768px){
+  .card-film{
+    width: 45%;
+    margin-bottom: 36px ;
+  }
+}
 @media (max-width: 480px){
   header {
     justify-content: center;
@@ -65,5 +115,43 @@ header h1{
 
   header h1{
     display: none;
+  }
+
+  #film-top{
+    flex-direction: row;
+  }
+
+  #film-top {
+    flex-direction: column;
+  }
+
+  #film-top img{
+    height: 241px;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+
+  #film-top div{
+    padding: 0;
+  }
+
+  #film-top h3{
+    font-size: 32px;
+  }
+  #film-top p{
+    font-size: 16px;
+  }
+
+  #film-top button{
+    position: static;
+    margin: auto;
+    width: 91px;
+    height: 40px;
+    display: block;
+  }
+
+  .card-film{
+    width: 100%;
   }
 }
