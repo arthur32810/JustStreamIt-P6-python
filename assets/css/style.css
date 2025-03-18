@@ -68,6 +68,7 @@ header h1{
 .card-film{
   position: relative;
   width: 30%;
+  margin-bottom: 36px ;
   
 }
 
@@ -99,13 +100,14 @@ header h1{
   margin-left: 60%;
   margin-bottom: 13px;
   font-family: 'Oswald';
+  text-align: center;
 
 }
 
 @media (max-width: 768px){
   .card-film{
     width: 45%;
-    margin-bottom: 36px ;
+   
   }
 }
 @media (max-width: 480px){
