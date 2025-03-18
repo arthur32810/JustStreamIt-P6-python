@@ -1,0 +1,54 @@
+
+
+.card-film{
+  position: relative;
+  width: 30%;
+  margin-bottom: 36px ;
+  
+}
+
+.card-film img{
+  width: 100%;
+}
+
+.card-film div{
+  position: absolute;
+  top: 34px;
+  box-sizing: border-box; 
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-film div h3{
+  color: white;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.card-film div button {
+  background-color: black;
+  color: white;
+  width: 81px;
+  height: 25px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 60%;
+  margin-bottom: 13px;
+  font-family: 'Oswald';
+  text-align: center;
+
+}
+
+
+@media (max-width: 768px){
+  .card-film{
+    width: 45%;
+   
+  }
+}
+
+@media (max-width: 480px){
+  .card-film{
+    width: 100%;
+  }
+}

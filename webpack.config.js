@@ -1,11 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './assets/js/files/main.js',  // Votre point d'entrée qui importera tous les autres fichiers
+  entry: './src/js/main.js',  // Votre point d'entrée qui importera tous les autres fichiers
   output: {
     filename: 'script.js',
-    path: path.resolve(__dirname, 'assets/js'),
-    publicPath: '/assets/js/'
+    path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',  // Changez en 'production' pour la version finale
   devServer: {

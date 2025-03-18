@@ -1,0 +1,63 @@
+#film-top {
+  border: black 6px solid;
+  display: flex;
+  padding: 10px;
+}
+
+#film-top div {
+  padding-left: 40px;
+  position: relative;
+}
+
+#film-top h3{
+  margin: 0;
+}
+
+#film-top button{
+  background-color: #FA0B0B;
+  color: white;
+  height: 68px;
+  width: 166px;
+  text-align: center;
+  border-radius: 25px;
+  position: absolute;
+  right: 50px;
+  border: none;
+  
+}
+
+
+
+@media (max-width: 480px){
+
+  #film-top {
+    flex-direction: column;
+
+    img{
+        height: 241px;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
+    div{
+        padding: 0;
+
+        h3{
+            font-size: 32px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+
+        button{
+            position: static;
+            margin: auto;
+            width: 91px;
+            height: 40px;
+            display: block;
+        }
+    }
+  }
+}

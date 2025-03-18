@@ -18,6 +18,7 @@ export function createCardBestFilm(film) {
 
     const button = document.createElement("button")
     button.textContent = "Détails"
+    button.id="openModal"
 
     div.appendChild(titleFilm)
     div.appendChild(descriptionFilm)

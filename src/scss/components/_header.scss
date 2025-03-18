@@ -1,0 +1,28 @@
+header{
+  background-color: #61787f;
+  display: flex;
+  align-items: center;
+  padding: 5px 25px; 
+
+  img {
+    width: 127px;
+    }
+
+    h1{
+    color: white;
+    font-weight: 300;
+    padding-left: 50px;
+    }
+}
+
+@media (max-width: 480px){
+  header {
+    justify-content: center;
+
+     h1{
+        display: none;
+    }
+  }
+
+  
+}
