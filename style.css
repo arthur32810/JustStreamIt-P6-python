@@ -1,8 +1,8 @@
 body{
   font-family: 'Oswald', sans-serif;
-  max-width: 837px;
+  max-width: 80%;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 40px;
  
 }
 
@@ -10,7 +10,7 @@ header{
   background-color: #61787f;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 5px 25px;
 }
 
 header img {
@@ -20,11 +20,21 @@ header img {
 header h1{
   color: white;
   font-weight: 300;
-  padding-left: 50 px;
+  padding-left: 50px;
 }
 
 #film-top {
   border: black 6px solid;
   display: flex;
   padding: 10px;
+}
+
+@media (max-width: 480px){
+  header {
+    justify-content: center;
+  }
+
+  header h1{
+    display: none;
+  }
 }
